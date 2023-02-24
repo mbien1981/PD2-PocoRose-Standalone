@@ -1,0 +1,35 @@
+{
+    "name": "PocoRose Standalone",
+    "description": "",
+    "blt_version": 2,
+    "author": "",
+    "color": "0.52 1 0",
+    "version": "1",
+    "hooks": [
+        {
+            "hook_id": "lib/states/ingamewaitingforplayers",
+            "script_path": "PocoRose.lua"
+        },
+        {
+            "hook_id": "lib/managers/menumanager",
+            "script_path": "PocoRose.lua"
+        },
+        {
+            "hook_id": "lib/units/cameras/fpcameraplayerbase",
+            "script_path": "PocoRose.lua"
+        },
+        {
+            "hook_id": "lib/units/beings/player/states/playerstandard",
+            "script_path": "PocoRose.lua"
+        }
+    ],
+    "keybinds": [
+        {
+            "keybind_id": "poco_rose_bind_standalone",
+            "name": "Toggle PocoRose",
+            "script_path": "bind.lua",
+            "run_in_menu": false,
+            "run_in_game": true
+        }
+    ]
+}
